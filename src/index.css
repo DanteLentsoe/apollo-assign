@@ -1,0 +1,208 @@
+/*####################
+ Global Features Start
+#####################*/
+
+*{
+ margin: 0px;
+ padding: 0px;
+ box-sizing: border-box;
+}
+
+:root{
+  --light: rgb(248, 248, 248);
+  --dark: #282c34;
+  --black: #000;
+  --white: white;
+}
+
+h2, p{
+  color:rgb(29, 28, 28);
+}
+
+a{
+  background: var(--background-color);
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+body.light{
+--background-color: var(--light);
+--text-color: var(--black);
+}
+
+body.dark{
+  --background-color: var(--dark);
+  --text-color: var(--white);
+
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--background-color);
+  color: var(--text-color);
+  transition: background 0.3s ease-in-out, color 0.6s ease-in-out;
+}
+
+/*####################
+ Global Features End
+#####################*/
+
+
+.nav-style{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 25px;
+  margin: 0 auto;
+  border-bottom: 2px solid #ddd;
+  max-width: 600px;
+}
+
+/*###############
+  Coin Box Start
+################*/
+.coin-box{
+  padding: 10px 16px;
+  margin: 20px 0px;
+  background-color: white;
+  border-bottom: 1px solid #fafafa;
+  width: 600px;
+  height: auto;
+  /* color: var(--background-color);*/
+}
+
+.coin-box:hover{
+  box-shadow: 1px 6px 20px rgba(0, 0, 0, 0.1);
+  
+}
+
+div.light{
+  --text-color: var(--black);
+}
+
+div.dark{
+--text-color: var(--white);
+}
+
+.coin-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-box h1{
+  margin-bottom: 1rem;
+}
+
+.coin-box p{
+  margin-top: 1rem;
+}
+.btn-remove-position{
+float: right;
+}
+
+.btn-style-all{
+  margin-top: 1rem;
+  color: rgb(29, 28, 28);
+  padding: 0.385rem 0.85rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  border: 2px solid rgb(29, 28, 28);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+  text-decoration: none;
+}
+
+.btn-style-all:hover{
+  color: #fff;
+  background: rgb(73, 14, 167);
+}
+
+
+.btn-style{
+  margin-top: 1rem;
+  color: rgb(29, 28, 28);
+  padding: 0.385rem 0.85rem;
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  font-size: 0.875rem;
+  border: 2px solid rgb(29, 28, 28);
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
+}
+
+.btn-style:hover{
+  color: #fff;
+  background: rgb(29,28,28);
+}
+/*###############
+  Coin Box End
+################*/
+
+
+/*##############
+  Banner Start 
+ ###############*/
+.banner{
+  margin-top: 50px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  padding: 20px;
+  background-color: white;
+  border-bottom: 1px solid #fafafa;
+}
+
+.banner h1{
+  font-size: 2.5rem;
+}
+
+
+.banner p{
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color:black;
+}
+
+
+
+/*############
+  Banner End 
+#############*/
+
+
+/*##################
+   Media Query Start
+################## */
+@media screen and (max-width: 576px){
+  .banner{
+    padding: 2rem 3rem;
+  }
+
+  .coin-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 295px;
+    height: auto;
+  }
+}
+
+
+/*##################
+   Media Query End
+################## */

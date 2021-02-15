@@ -1,0 +1,14 @@
+#darkMode {
+    color: auto;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#darkMode:hover{
+color: rgb(76, 47, 122);
+cursor: pointer;
+}
+
+
+#darkMode.clicked{
+    color: auto;
+}
